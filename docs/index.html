@@ -1,1 +1,390 @@
-GEO490
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* html-md-01.css */
+
+div#TOC li {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+  background-image: none;
+  background-position: 0px center;
+}
+
+.navbar-brand, .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .pre-scrollable {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* exercise */
+body, td {
+   font-family: Times, TimesNewRoman, serif;
+   background-color: white;
+   font-size: 16px;
+   margin: 30px;
+   text-align:justify;
+}
+
+/*/* web page */
+/*body, td {
+  font-family: Times, TimesNewRoman, serif;
+  background-color: white;
+  font-size: 16px;
+  font-weight: normal;
+}*/
+
+/*exercise*/
+tt, code, pre {
+   font-family: Consolas, "Courier New", Monaco, monospace;
+   font-size: 13px;
+   font-weight: bolder;
+}
+
+/*web page*/
+tt, code, pre {
+  font-family: Consolas, "Courier New", Monaco, monospace;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h1.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+tt, code, pre {
+  font-family: Consolas, "Courier New", Monaco, monospace;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/*pre { 
+   margin-top: 0;
+   max-width: 100%;
+   border: 1px solid #999999;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; 
+/*   padding: 0.2em;*/
+/*   background-color:  #E0E0E0;*/
+}
+
+code.r, code.noeval, code.cpp {
+   background-color: #eeeeee;
+}*/
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#000000;
+   margin:0;
+   padding-left: 1em;
+   padding-right: 1em;
+   border-left: 0.5em #E0E0E0 solid;
+   border-right: 0.5em #E0E0E0 solid
+  font-family: Times, TimesNewRoman, serif;
+  background-color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+  * {
+    background-color: transparent !important;
+    background-image: none !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;
+    background-position: 0% 0% !important;
+    color: black !important;
+    filter: none !important;
+  }
+  body, td {
+    font-family: Times, TimesNewRoman, serif;
+    background-color: white;
+    font-size: 13px;
+    font-weight: normal;
+    width:  940px;
+    margin: 30px;
+    right:  860px;
+    text-align:justify;
+  }
+  h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h1.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  h4 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  h5 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  h6 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    font-weight: bolder;
+  }
+  tt, code, pre {
+    font-family: Consolas, "Courier New", Monaco, monospace;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+
+</style>
+</head>
+<body>
+<h1>Introduction</h1>
+<p>The wildfire is one of the major concerns in the States. It not only threatens people's lives but also impacts the ecosystem of the area. To raise the awareness of the dangers of wildfires, for this project, data analysis was conducted with R.</p>
+<h1>1. Download the Data</h1>
+<p>The data is retrieved from the class file using NetCDF.NetCDF is a widely used format for exchanging or distributing climate data, and has also been adopted in other fields. Wildfire is not climate data; however, the data contains the spatial data such as location and other information regarding damages caused. The file downloaded is called nc_files from GEO490 server contains following:</p>
+<ul>
+<li>TraCE<em>tas</em>llsy<em>monlenadj<em>seas</em>anm</em>PI_hw30.nc</li>
+<li>TraCE<em>tas</em>llsy<em>monlenadj<em>seas</em>locanm</em>hw30.nc</li>
+<li>treecov.nc</li>
+<li>tsi<em>v02r01</em>monthly_s188201<em>e188212</em>c20170717.nc</li>
+<li>us_fires.nc</li>
+</ul>
+<h1>2.1 Open File</h1>
+<p>To open the ncfiles on RStudio, the package <strong>ncdf4</strong> needs to be installed. The following code does not contain the installation part because the installation is required only once.  </p>
+<pre><code>library(ncdf4)
+ncpath &lt;- &quot;/Users/wauno/Documents/GEO 490/nc_files/&quot;
+ncname &lt;- &quot;us_fires&quot;
+ncfname &lt;- paste(ncpath, ncname, &quot;.nc&quot;, sep=&quot;&quot;)
+
+
+ncin &lt;- nc_open(ncfname)
+print(ncin)
+</code></pre>
+
+<h1>2.2 Get the longitude and latitude</h1>
+<pre><code>lon &lt;- ncvar_get(ncin,&quot;lon&quot;)
+nlon &lt;- dim(lon)
+head(lon)
+lat &lt;- ncvar_get(ncin,&quot;lat&quot;)
+nlat &lt;- dim(lat)
+head(lat)
+print(c(nlon,nlat))
+</code></pre>
+
+<h1>2.3 Get Fire Data</h1>
+<pre><code>dname &lt;- &quot;fpafod_counts&quot;
+dname2 &lt;- &quot;fpafod_mean_area&quot;
+fire_array &lt;- ncvar_get(ncin, dname)
+fire_area_array &lt;- ncvar_get(ncin, dname2)
+dlname &lt;- ncatt_get(ncin, dname, &quot;long_name&quot;)
+dunits &lt;- ncatt_get(ncin, dname, &quot;units&quot;)
+fillvalue &lt;- ncatt_get(ncin,dname,&quot;_FillValue&quot;)
+dim(fire_array)
+</code></pre>
+
+<h1>2.4 Get global attributes</h1>
+<pre><code>title &lt;- ncatt_get(ncin,0,&quot;title&quot;)
+institution &lt;- ncatt_get(ncin,0,&quot;institution&quot;)
+datasource &lt;- ncatt_get(ncin,0,&quot;datasource&quot;)
+references &lt;- ncatt_get(ncin,0,&quot;references&quot;)
+history &lt;- ncatt_get(ncin,0,&quot;history&quot;)
+Conventions &lt;- ncatt_get(ncin,0,&quot;Conventions&quot;)
+</code></pre>
+
+<h1>2.5 Basic Visualization</h1>
+<p>To visualize the data, some packages need to be installed beforehand. For this project, packages <strong>RColorBrewer</strong> was installed, for instance.</p>
+<pre><code>fire_array[fire_array==fillvalue$value] &lt;- NA
+length(na.omit(as.vector(fire_array[,1])))
+
+
+grid &lt;- expand.grid(lon=lon, lat=lat)
+cutpts &lt;- c(0,50,100,150,200,250,300,350,400,500)
+levelplot(fire_area_array ~ lon * lat, data=grid, at=cutpts, cuts=11, pretty=T, 
+      col.regions=(rev(brewer.pal(10,&quot;RdBu&quot;))))
+</code></pre>
+
+<p><img src="https://i.imgur.com/8iYKeAC.png" />
+It is a rough image since base map (U.S. shapefile is not used, but we can still observe that which area has higher occurrence of wildfires.)
+<img src="https://i.imgur.com/NSBBpi7.png" /></p>
+<p>This is for the the average area.</p>
+<h1>2.6 Plotting the U.S. shpafile</h1>
+<p>Since the visuzlizetion process was conducted without the shapefile (the U.S. boundary without Alaska and Hawaii), to improve the visualization, the U.S. boundary shapefile was downloaded from:
+<a href="https://www.weather.gov/gis/USStates">https://www.weather.gov/gis/USStates 
+</a></p>
+<pre><code>shp_path &lt;- &quot;/Users/wauno/Documents/GEO 490/nc_files/s_11au16/&quot;
+shp_name &lt;- &quot;s_11au16.shp&quot;
+shp_file &lt;- paste(shp_path, shp_name, sep=&quot;&quot;)
+
+us_shp &lt;- read_sf(shp_file)
+us_outline &lt;- as(st_geometry(us_shp), Class=&quot;Spatial&quot;)
+us_outline_gg &lt;- fortify(us_outline)
+
+
+ggplot(us_outline_gg, aes(long, lat)) + geom_polygon(aes(group = group), color = &quot;gray50&quot;, fill = NA) +
+theme_bw() + xlim(-130, -68) + ylim(20,50)
+</code></pre>
+
+<p><img src="https://i.imgur.com/hHwx3tn.png" /></p>
+<h1>2.7 Plotting raster data of wildfire frequency</h1>
+<p>The data is plotted by using <strong>levelplot()</strong>. To use this feature, <strong>raterVis</strong> package needs to be installed beforehand. This package implements a bumber of Lattice-type plots for raster data set. </p>
+<pre><code>fire_path &lt;- &quot;/Users/wauno/Documents/GEO 490/nc_files/&quot;
+fire_name &lt;- &quot;us_fires.nc&quot;
+fire_file &lt;- paste(fire_path, fire_name, sep=&quot;&quot;)
+fire &lt;- raster(fire_file)
+print(fire)
+</code></pre>
+
+<blockquote>
+<p>File C:\Users\wauno\Documents\GEO 490\nc<em>files\us</em>fires.nc (NC<em>FORMAT</em>NETCDF4):</p>
+<p>2 variables (excluding dimension variables):
+float fpafod<em>counts[lon,lat]   (Contiguous storage)<br />
+units: 1
+            <em>FillValue: 1.00000003318135e+32
+            long</em>name: Number of fires, 1992-2013
+        &gt;float fpafod</em>mean_area[lon,lat]   (Contiguous storage)<br />
+            units: ha
+            <em>FillValue: 1.00000003318135e+32
+            long</em>name: Average Fire Size, 1992-2013</p>
+<p>2 dimensions:
+        lon  Size:126
+            units: degrees<em>east
+            long</em>name: lon
+            axis: X
+        lat  Size:50
+            units: degrees<em>north
+            long</em>name: lat
+            axis: Y</p>
+<p>7 global attributes:
+        _NCProperties: version=1|netcdflibversion=4.4.1.1|hdf5libversion=1.10.0
+        title: FPA-FOD Fires
+        institution: USFS
+        source: http://www.fs.usda.gov/rds/archive/Product/RDS-2013-0009.3/
+        references: Short, K.C., 2014, Earth Syst. Sci. Data, 6, 1-27
+        history: P.J. Bartlein, Sat May  4 16:31:03 2019
+        Conventions: CF-1.6</p>
+</blockquote>
+<pre><code>fire
+</code></pre>
+
+<blockquote>
+<p>class      : RasterLayer 
+dimensions : 50, 126, 6300  (nrow, ncol, ncell)
+resolution : 0.5, 0.5  (x, y)
+extent     : -128, -65, 25.5, 50.5  (xmin, xmax, ymin, ymax)
+crs        : +proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0 
+source     : C:/Users/wauno/Documents/GEO 490/nc<em>files/us</em>fires.nc 
+names      : Number.of.fires..1992.2013 
+zvar       : fpafod_counts </p>
+</blockquote>
+<pre><code>print(c(filename(fire), hasValues(fire), inMemory(fire)))
+</code></pre>
+
+<blockquote>
+<p>[1] &quot;C:\Users\wauno\Documents\GEO 490\nc<em>files\us</em>fires.nc&quot;
+[2] &quot;TRUE&quot;                                                     <br />
+[3] &quot;FALSE&quot;</p>
+</blockquote>
+<pre><code>levelplot(fire)
+</code></pre>
+
+<p><img src="https://i.imgur.com/alWvodj.png" /></p>
+<h1>2.8 Plotting with shapefile</h1>
+<p>Finally, the wildfire occurrence data is plotted on the U.S. boundary shapefile with a graduated color.</p>
+<pre><code>mapTheme &lt;- rasterTheme(region=brewer.pal(9,&quot;Greens&quot;))
+plt &lt;- levelplot(fire, margin=F, par.settings=mapTheme)
+plt + latticeExtra::layer(sp.lines(us_outline, col=&quot;gray30&quot;, lwd=0.5))
+</code></pre>
+
+<p><img src="https://i.imgur.com/2O2SHAQ.png" /></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
